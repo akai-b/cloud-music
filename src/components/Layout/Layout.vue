@@ -9,7 +9,9 @@ import Header from './components/Header.vue'
             </el-header>
             <el-container>
                 <el-aside width="200px">Aside</el-aside>
-                <el-main>Main</el-main>
+                <el-main>
+                    <router-view></router-view>
+                </el-main>
             </el-container>
             <el-footer>Footer</el-footer>
         </el-container>
@@ -24,7 +26,10 @@ import Header from './components/Header.vue'
         height: 100%;
     }
 }
-header,aside,footer,main{
+header,aside,footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(205, 245, 232);
     border:1px solid #fff;
 }
