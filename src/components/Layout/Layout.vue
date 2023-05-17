@@ -1,5 +1,6 @@
 <script setup lang='ts'>
 import Header from './components/Header.vue'
+import LeftMenu from './components/LeftMenu.vue';
 </script>
 <template>
     <div class="common-layout">
@@ -8,7 +9,9 @@ import Header from './components/Header.vue'
                 <Header/>
             </el-header>
             <el-container>
-                <el-aside width="200px">Aside</el-aside>
+                <el-aside width="200px">
+                    <LeftMenu></LeftMenu>
+                </el-aside>
                 <el-main>
                     <router-view></router-view>
                 </el-main>
